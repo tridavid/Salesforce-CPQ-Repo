@@ -1,0 +1,12 @@
+<template>
+    <template if:true={productId}>
+        <lightning-datatable key-field="Id"
+                             columns={columns}
+                             data={data}
+                             onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </template>
+    <template if:true={hasCustomer}>
+        <c-customer-tree customer={customer}></c-customer-tree>
+    </template>  
+</template>
