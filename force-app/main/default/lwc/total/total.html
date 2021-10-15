@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <template if:true={totalProducts}>
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                Total products purchase till today is {totalProducts.data}.
+            </h2>
+        </template>
+        <template if:true={totalBusiness}>
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                Total business generated till today is {totalBusiness.data}$.
+            </h2>
+        </template>
+    </div>
+</template>
